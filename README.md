@@ -1,2 +1,2 @@
 # estudo
-Para salvar material de estudp
+Para salvar material de estudo
