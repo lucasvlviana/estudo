@@ -3,10 +3,19 @@
 <body>
     <script>
         class Animal {
-            constructor(){
+            constructor() {
                 this.nome = 'cachorro';
             }
+
+            printNome(){
+                return this.nome;
+            }
         }
+
+        animal = new Animal();
+
+        alert(animal.nome);
+
     </script>
 </body>
 
