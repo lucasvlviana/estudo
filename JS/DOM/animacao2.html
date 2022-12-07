@@ -1,0 +1,42 @@
+<html>
+
+<body>
+
+    <style>
+        .conteudo h2 span {
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .conteudo p {
+            overflow: hidden;
+            height: 10px;
+            transition: 1s;
+        }
+
+        .mostrar {
+            height: 200px !important;
+        }
+    </style>
+
+    <div class="conteudo">
+        <h2>Titulo do conteúdo <span>Ver mais!</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nulla autem sapiente, vero alias
+            consequuntur, ex ea rerum dolore facere illo cupiditate quidem! Ipsum assumenda quasi molestiae
+            reprehenderit dignissimos dolor?</p>
+    </div>
+
+    <script>
+        document.querySelector('.conteudo span').addEventListener('click', function () {
+            var conteudo = document.querySelector('.conteudo p').classList.add('mostrar');
+
+            if (conteudo.classList.contains('mostrar')) {
+                conteudo.classList.remove('mostrar');
+            } else {
+                conteudo.classList.add('mostrar');
+            }
+        })
+    </script>
+</body>
+
+</html>
